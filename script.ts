@@ -23,7 +23,7 @@ document.querySelector(".btn--roll")!.addEventListener("click", function () {
       document.getElementById("current--" + activePlayer)!.textContent =
         `${currentScore}`;
     } else {
-      document.getElementById("current--" + activePlayer)!.textContent = `${0}`;
+      document.getElementById("current--" + activePlayer)!.textContent = "0";
       currentScore = 0;
 
       if (activePlayer === 0) {
@@ -53,7 +53,7 @@ document.querySelector(".btn--hold")!.addEventListener("click", function () {
         .querySelector(".player--" + activePlayer)
         ?.classList.remove("player--active");
     } else {
-      document.getElementById("current--" + activePlayer)!.textContent = `0`;
+      document.getElementById("current--" + activePlayer)!.textContent = "0";
       currentScore = 0;
 
       if (activePlayer === 0) {

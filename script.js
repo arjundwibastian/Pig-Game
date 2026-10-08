@@ -20,7 +20,7 @@ document.querySelector(".btn--roll").addEventListener("click", function () {
                 `${currentScore}`;
         }
         else {
-            document.getElementById("current--" + activePlayer).textContent = `${0}`;
+            document.getElementById("current--" + activePlayer).textContent = "0";
             currentScore = 0;
             if (activePlayer === 0) {
                 activePlayer = 1;
@@ -49,7 +49,7 @@ document.querySelector(".btn--hold").addEventListener("click", function () {
                 ?.classList.remove("player--active");
         }
         else {
-            document.getElementById("current--" + activePlayer).textContent = `0`;
+            document.getElementById("current--" + activePlayer).textContent = "0";
             currentScore = 0;
             if (activePlayer === 0) {
                 activePlayer = 1;
